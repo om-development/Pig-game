@@ -7,7 +7,7 @@ Here i used sessionStorage , eventListener , and wrote many other functions.
 
 # To-Play
 
-Click on this link
+Click on this link https://om-development.github.io/Pig-game/
 Enter player data or just press done (It will send ghost value).
 
 There are 2 players
