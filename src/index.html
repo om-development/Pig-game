@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    style="background-image: url(assets/bg-22.jpg)"
+    class="bg-cover bg-no-repeat bg-center h-screen w-full"
+  >
+    <div class="h-full w-full flex justify-center items-center">
+      <div
+        class="backdrop-contrast-75 h-60 w-60 border rounded-4xl flex justify-center items-center"
+      >
+        <form action="">
+          <div class="flex flex-col justify-between items-center">
+            <div class="nameInput justify-between space-y-3 px-3 flex flex-col">
+              <input
+                type="text"
+                placeholder="Player-1"
+                class="bg-amber-200/50 text-center rounded-2xl"
+                id="player--1--input"
+              />
+              <div class="flex justify-around items-center text-center">
+                <label class="text-sm font-medium text-center"
+                  ><input
+                    type="radio"
+                    name="gender--1"
+                    value="boy"
+                    class="inline"
+                  />Boy</label
+                >
+                <label class="text-sm font-medium text-center"
+                  ><input
+                    type="radio"
+                    name="gender--1"
+                    value="girl"
+                    class="inline"
+                  />Girl</label
+                >
+              </div>
+              <input
+                type="text"
+                placeholder="Player-2"
+                class="bg-amber-200/50 text-center rounded-2xl"
+                id="player--2--input"
+              />
+              <div class="flex justify-around items-center text-center">
+                <label class="text-sm font-medium text-center"
+                  ><input
+                    type="radio"
+                    name="gender--2"
+                    value="boy"
+                    class="inline"
+                  />Boy</label
+                >
+                <label class="text-sm font-medium text-center"
+                  ><input
+                    type="radio"
+                    name="gender--2"
+                    value="girl"
+                    class="inline"
+                  />Girl</label
+                >
+              </div>
+              <div
+                class="startGame hidden justify-between px-6 pt-1 items-center"
+              >
+                <button
+                  type="button"
+                  class="bg-amber-200/50 rounded-2xl h-8 w-15 cursor-pointer"
+                  onclick="window.location.href = 'game.html'"
+                >
+                  Play
+                </button>
+                <button
+                  type="button"
+                  class="bg-amber-200/50 rounded-2xl h-8 w-15 cursor-pointer"
+                  id="backBtn"
+                >
+                  Back
+                </button>
+              </div>
+              <div class="flex loadBtn justify-between px-6 pt-0 items-center">
+                <button
+                  type="submit"
+                  onclick="handleSubmit(event)"
+                  class="bg-amber-200/50 rounded-2xl h-8 w-15 cursor-pointer"
+                >
+                  Done
+                </button>
+                <button
+                  type="reset"
+                  class="bg-amber-200/50 rounded-2xl h-8 w-15 cursor-pointer"
+                >
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

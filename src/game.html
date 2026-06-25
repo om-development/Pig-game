@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="h-screen w-full bg-cover flex justify-center items-center bg-no-repeat bg-center"
+    style="background-image: url(assets/back.gif)"
+  >
+    <div class="h-full w-full flex-col hidden justify-between items-center results ">
+        <!-- Player 2's cards-->
+        <div style="background-image: url(assets/win-boy.gif);" class="hidden z-30 h-[50%] win--2 w-full transform rotate-180 bg-cover bg-center justify-center items-center bg-no-repeat"><h1 class="win--2--text text-3xl font-extrabold text-center">You win</h1></div>
+        <div style="background-image: url(assets/lose-boy.gif);" class="hidden z-30 h-[50%] lose--2 w-full transform rotate-180 bg-cover bg-center justify-center items-center bg-no-repeat"><h1 class="lose--2--text text-3xl font-extrabold text-center">You lose</h1></div>
+        
+        <!-- Player 1's cards  -->
+        <div style="background-image: url(assets/win-boy.gif);" class="hidden h-[50%] justify-center items-center win--1 z-30 w-full bg-cover bg-center bg-no-repeat"><h1 class="win--1--text text-3xl font-extrabold text-center">You win</h1></div>
+        <div style="background-image: url(assets/lose-boy.gif);" class="hidden z-30 h-[50%] justify-center items-center lose--1 w-full bg-cover bg-center bg-no-repeat"><h1 class="lose--1--text text-3xl font-extrabold text-center">You lose</h1></div>
+    </div>
+     
+    
+    <div
+      class="game px-3 py-2 justify-center flex rounded-3xl space-y-10 items-center border-2 h-[90vh] w-[90vw]"
+    >
+      <div id="gameContent" class="h-[86vh] w-[86vw] max-w-5xl">
+        <div class="grid grid-cols-3 grid-rows-7 h-full w-full gap-2">
+          <button
+            id="roll--2"
+            class="bg-transparent backdrop-blur-sm rounded-2xl transform rotate-180 text-2xl font-bold font-mono border-2 m-2"
+          >
+            Roll
+          </button>
+          <button
+            id="hold--2"
+            class="bg-transparent transform rotate-180 backdrop-blur-sm rounded-2xl text-2xl font-bold font-mono border-2 m-2"
+          >
+            Hold
+          </button>
+          <div
+            id="point"
+            class="bg-transparent backdrop-blur-sm rounded-2xl text-2xl font-bold font-mono border-2 m-2 flex items-center justify-center"
+          >
+            <h1 id="score--2" class="text-center transform rotate-180">
+              Points
+            </h1>
+          </div>
+          <div
+            class="col-span-3 flex justify-center items-center bg-transparent backdrop-blur-sm rounded-2xl text-2xl font-bold font-mono border-2 m-2"
+          >
+            <h1 class="current--2 transform rotate-180">Current Points</h1>
+          </div>
+          <div class="dice col-span-3 row-span-3 h-full w-full">
+            <div
+              class="h-full w-full flex justify-around space-y-3 flex-col items-center"
+            >
+              <img
+                src="assets/roll.gif"
+                alt="roll"
+                class="h-20 notify--2 hidden w-60 transform rotate-180"
+              />
+
+              <img id="dice" src="assets/1_dots.png" alt="" class="h-20 my-3" />
+              <img
+                src="assets/roll.gif"
+                alt="roll"
+                class="notify--1 h-20 w-60"
+              />
+            </div>
+          </div>
+          <div
+            class="col-span-3 flex justify-center items-center bg-transparent backdrop-blur-sm rounded-2xl text-2xl font-bold font-mono border-2 m-2"
+          >
+            <h1 class="current--1">Current Points</h1>
+          </div>
+          <div
+            id="point"
+            class="bg-transparent backdrop-blur-sm rounded-2xl text-2xl font-bold font-mono border-2 m-2 flex items-center justify-center"
+          >
+            <h1 id="score--1" class="text-center">Points</h1>
+          </div>
+          <button
+            id="hold--1"
+            class="bg-transparent backdrop-blur-sm rounded-2xl text-2xl font-bold font-mono border-2 m-2"
+          >
+            Hold
+          </button>
+          <button
+            id="roll--1"
+            class="bg-transparent backdrop-blur-sm rounded-2xl text-2xl font-bold font-mono border-2 m-2"
+          >
+            Roll
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
